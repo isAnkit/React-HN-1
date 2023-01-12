@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  text-shadow: 3px 3px #51f1f1;
+  text-align: center;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient( rgb(159, 247, 232),rgb(214, 148, 148),rgba(240, 203, 203, 0));
+}
+
+
+button{
+  width: 270px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  margin: 5px;
+  margin-top: 80px;
+  top: 50%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(53, 49, 49);
+  background-color: #20eee4;
+}
+
+.maincontainer-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: right;
+  margin-right: 280px;
+  margin-top: -290px;
+}
+
+.maincontainer-func{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 600px;
+  margin-top: 60px;
+}
+
+.CompBox{
+  width: 32vw;
+  height: 30vh;
+  background-color:#20eee4;
+  border-radius: 35px;
+  border: 2px solid black;
+}
+
+p{
+  color: #0b0c0e;
+}

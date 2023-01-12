@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useState} from 'react'
+import FunctionComponent from './Component/FunctionComponent'
+import ClassComponent from './Component/ClassComponent'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [fClick,funcClick]=useState(false);
+  const [cClick,classClick]=useState(false);
+
+  return(
+    <div className='main'>
+      <h1>Styling Using Functional And Class Component</h1>
+      <button className='firstbtn' onClick={()=>funcClick(true)}>To see styling in functional component</button>
+      <button className='secondbtn' onClick={()=>classClick(true)}>To see styling in class component</button>
+       <div className='container'>
+    {
+      fClick && <FunctionComponent/>
+    }
+    {
+      cClick && <ClassComponent/>
+    }
     </div>
-  );
+    </div>
+  )
 }
 
 export default App;
